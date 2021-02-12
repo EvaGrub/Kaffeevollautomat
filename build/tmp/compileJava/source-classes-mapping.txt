@@ -1,0 +1,27 @@
+Fächer/Wasserbehaelter.java
+ FÃ¤cher.Wasserbehaelter
+ProgrammWahl.java
+ ProgrammWahl
+Getraenke/CafeCrema.java
+ Getraenke.CafeCrema
+Fächer/Kaffeesatz.java
+ FÃ¤cher.Kaffeesatz
+Getraenke/Wasser.java
+ Getraenke.Wasser
+Enums/Getraenk.java
+ Enums.Getraenk
+Kaffeevollautomat.java
+ Kaffeevollautomat
+Pruefung.java
+ Pruefung
+ Pruefung$1
+Fächer/Kaffeebohnen.java
+ FÃ¤cher.Kaffeebohnen
+Getraenke/Espresso.java
+ Getraenke.Espresso
+Enums/Temperatur.java
+ Enums.Temperatur
+Fächer/Tropfschale.java
+ FÃ¤cher.Tropfschale
+FXMLController.java
+ FXMLController

@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="600.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="FXMLController">
+   <children>
+      <Separator layoutX="14.0" layoutY="75.0" prefWidth="200.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" />
+      <TextArea fx:id="textFeld1" editable="false" layoutX="22.0" layoutY="90.0" maxHeight="50.0" maxWidth="590.0" minHeight="50.0" minWidth="295.0" prefHeight="50.0" prefWidth="295.0" style="-fx-background-color: B5B5B5;" text="Kaffe" wrapText="true" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="302.0" AnchorPane.topAnchor="80.0">
+         <font>
+            <Font name="Courier New" size="24.0" />
+         </font>
+         <effect>
+            <InnerShadow />
+         </effect>
+         <opaqueInsets>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </opaqueInsets></TextArea>
+      <Button id="startButton" fx:id="startButton" layoutX="534.0" layoutY="25.0" maxHeight="65.0" maxWidth="65.0" minHeight="65.0" minWidth="65.0" mnemonicParsing="false" onAction="#handleStartButtonAction" prefHeight="65.0" prefWidth="65.0" style="-fx-border-radius: 32; -fx-border-color: black; -fx-background-radius: 32; -fx-background-color: #9ff781;" text="START / STOPP" textAlignment="CENTER" wrapText="true" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="5.0">
+         <font>
+            <Font name="Candara Bold" size="12.0" />
+         </font>
+         <effect>
+            <DropShadow height="40.0" radius="19.5" width="40.0">
+               <color>
+                  <Color red="1.0" green="1.0" blue="1.0" />
+               </color>
+            </DropShadow>
+         </effect>
+      </Button>
+      <ButtonBar fx:id="getraenkeFeld" buttonMinWidth="163.0" layoutX="15.0" layoutY="85.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" nodeOrientation="LEFT_TO_RIGHT" prefHeight="165.0" prefWidth="520.0" style="-fx-background-color: B5B5B5; -fx-border-radius: 10px; -fx-background-radius: 10px;" AnchorPane.bottomAnchor="429.4" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="75.0" AnchorPane.topAnchor="5.0">
+         <buttons>
+            <RadioButton id="heißesWasser" fx:id="crema" maxHeight="55.0" maxWidth="150.0" minHeight="55.0" minWidth="150.0" mnemonicParsing="false" prefHeight="55.0" prefWidth="150.0" selected="true" style="-fx-border-color: black; -fx-border-radius: 10px; -fx-background-radius: 10px; -fx-background-color: white;" styleClass="getränk" text="Café Crema" textAlignment="CENTER" wrapText="true">
+               <padding>
+                  <Insets bottom="40.0" left="40.0" right="40.0" top="40.0" />
+               </padding>
+               <toggleGroup>
+                  <ToggleGroup fx:id="getränk" />
+               </toggleGroup>
+               <font>
+                  <Font name="Candara Bold" size="12.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <effect>
+                  <InnerShadow />
+               </effect>
+            </RadioButton>
+            <RadioButton id="espresso" fx:id="espresso" contentDisplay="CENTER" maxHeight="55.0" maxWidth="150.0" minHeight="55.0" minWidth="150.0" mnemonicParsing="false" prefHeight="55.0" prefWidth="150.0" style="-fx-border-color: black; -fx-border-radius: 10px; -fx-background-radius: 10px; -fx-background-color: white;" styleClass="getränk" text="Espresso" textAlignment="CENTER" toggleGroup="$getränk" wrapText="true">
+               <padding>
+                  <Insets bottom="50.0" left="50.0" right="50.0" top="50.0" />
+               </padding>
+               <font>
+                  <Font name="Candara Bold" size="12.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <effect>
+                  <InnerShadow />
+               </effect>
+            </RadioButton>
+            <RadioButton id="heißesWasser" fx:id="wasser" layoutX="31.0" layoutY="11.0" maxHeight="55.0" maxWidth="150.0" minHeight="55.0" minWidth="150.0" mnemonicParsing="false" prefHeight="55.0" prefWidth="150.0" style="-fx-border-color: black; -fx-border-radius: 10px; -fx-background-radius: 10px; -fx-background-color: white;" styleClass="getränk" text="Wasser" textAlignment="CENTER" toggleGroup="$getränk">
+               <padding>
+                  <Insets bottom="40.0" left="40.0" right="40.0" top="40.0" />
+               </padding>
+               <font>
+                  <Font name="Candara Bold" size="12.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <effect>
+                  <InnerShadow />
+               </effect>
+            </RadioButton>
+         </buttons>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <padding>
+            <Insets bottom="5.0" left="5.0" right="24.0" top="5.0" />
+         </padding>
+         <effect>
+            <InnerShadow />
+         </effect>
+      </ButtonBar>
+      <Separator layoutX="14.0" layoutY="137.0" prefWidth="200.0" AnchorPane.bottomAnchor="360.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="135.0" />
+      <HBox layoutX="90.0" layoutY="150.0" prefHeight="235.0" prefWidth="419.0" style="-fx-background-color: black;">
+         <children>
+            <VBox fx:id="kaffeestaerke" prefHeight="249.0" prefWidth="161.0" style="-fx-background-color: black;">
+               <children>
+                  <Label alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="24.0" prefWidth="140.0" style="-fx-border-color: black; -fx-border-radius: 5px; -fx-background-color: B5B5B5;" text="Kaffestärke" textAlignment="CENTER">
+                     <font>
+                        <Font name="Candara Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <RadioButton fx:id="staerkeSchwach" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="70.0" prefWidth="140.0" selected="true" style="-fx-border-color: black; -fx-border-radius: 5px; -fx-background-color: B45F04;" text="schwach" textAlignment="CENTER" textFill="WHITE">
+                     <font>
+                        <Font name="Candara Bold" size="14.0" />
+                     </font>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <toggleGroup>
+                        <ToggleGroup fx:id="kaffeestärke" />
+                     </toggleGroup>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </RadioButton>
+                  <RadioButton fx:id="staerkeNormal" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="70.0" prefWidth="140.0" style="-fx-border-color: black; -fx-border-radius: 5px; -fx-background-color: #8A4B08;" text="normal" textAlignment="CENTER" textFill="WHITE" toggleGroup="$kaffeestärke">
+                     <font>
+                        <Font name="Candara Bold" size="14.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </RadioButton>
+                  <RadioButton fx:id="staerkeStark" contentDisplay="RIGHT" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="70.0" prefWidth="140.0" style="-fx-border-color: black; -fx-border-radius: 5px; -fx-background-color: #61380B;" text="stark" textAlignment="CENTER" textFill="WHITE" toggleGroup="$kaffeestärke">
+                     <font>
+                        <Font name="Candara Bold" size="14.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </RadioButton>
+               </children>
+               <effect>
+                  <InnerShadow />
+               </effect>
+            </VBox>
+            <VBox fx:id="tassengroesse" prefHeight="249.0" prefWidth="171.0" style="-fx-background-color: black;">
+               <children>
+                  <Label alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="24.0" prefWidth="140.0" style="-fx-border-color: black; -fx-border-radius: 5px; -fx-background-color: B5B5B5;" text="Tassengröße" textAlignment="CENTER">
+                     <font>
+                        <Font name="Candara Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <RadioButton fx:id="groesseDoppelt" contentDisplay="TEXT_ONLY" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="70.0" prefWidth="140.0" selected="true" style="-fx-border-color: black; -fx-border-radius: 5px; -fx-background-color: #585858;" text="doppelt" textAlignment="CENTER" textFill="WHITE">
+                     <font>
+                        <Font name="Candara Bold" size="14.0" />
+                     </font>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <toggleGroup>
+                        <ToggleGroup fx:id="tassengröße" />
+                     </toggleGroup>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </RadioButton>
+                  <RadioButton fx:id="groesseNormal" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="70.0" prefWidth="140.0" style="-fx-border-color: black; -fx-border-radius: 5px; -fx-background-color: #A4A4A4;" text="normal" textAlignment="CENTER" textFill="WHITE" toggleGroup="$tassengröße">
+                     <font>
+                        <Font name="Candara Bold" size="14.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </RadioButton>
+                  <RadioButton fx:id="groesseKlein" contentDisplay="RIGHT" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="70.0" prefWidth="140.0" style="-fx-border-color: black; -fx-border-radius: 5px; -fx-background-color: D8D8D8;" text="klein" textAlignment="CENTER" textFill="WHITE" toggleGroup="$tassengröße">
+                     <font>
+                        <Font name="Candara Bold" size="14.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </RadioButton>
+               </children>
+               <effect>
+                  <InnerShadow />
+               </effect>
+            </VBox>
+            <VBox fx:id="wassertemperatur" prefHeight="249.0" prefWidth="161.0" style="-fx-background-color: black;">
+               <children>
+                  <Label alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="24.0" prefWidth="140.0" style="-fx-border-color: black; -fx-border-radius: 5px; -fx-background-color: B5B5B5;" text="Wassertemperatur" textAlignment="CENTER">
+                     <font>
+                        <Font name="Candara Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <RadioButton fx:id="temperatur3" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="70.0" prefWidth="140.0" selected="true" style="-fx-border-color: black; -fx-border-radius: 5px; -fx-background-color: #FE2E2E;" text="Stufe 3" textAlignment="CENTER" textFill="WHITE">
+                     <font>
+                        <Font name="Candara Bold" size="14.0" />
+                     </font>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <toggleGroup>
+                        <ToggleGroup fx:id="wassertemperatur" />
+                     </toggleGroup>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </RadioButton>
+                  <RadioButton fx:id="temperatur2" mnemonicParsing="false" prefHeight="75.0" prefWidth="140.0" style="-fx-border-color: black; -fx-border-radius: 5px; -fx-background-color: #F3F781;" text="Stufe 2" textAlignment="CENTER" textFill="WHITE" toggleGroup="$wassertemperatur">
+                     <font>
+                        <Font name="Candara Bold" size="14.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </RadioButton>
+                  <RadioButton fx:id="temperatur1" contentDisplay="RIGHT" mnemonicParsing="false" prefHeight="75.0" prefWidth="140.0" style="-fx-border-color: black; -fx-border-radius: 5px; -fx-background-color: #58ACFA;" text="Stufe 1" textAlignment="CENTER" textFill="WHITE" toggleGroup="$wassertemperatur">
+                     <font>
+                        <Font name="Candara Bold" size="14.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </RadioButton>
+               </children>
+               <effect>
+                  <InnerShadow />
+               </effect>
+            </VBox>
+         </children>
+      </HBox>
+      <TitledPane animated="false" collapsible="false" layoutX="525.0" layoutY="150.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mouseTransparent="true" prefHeight="235.0" prefWidth="62.0" style="-fx-background-radius: 10px; -fx-border-radius: 10px; -fx-background-color: B5B5B5;" text="Wassertank" textAlignment="CENTER" wrapText="true">
+         <font>
+            <Font size="8.0" />
+         </font>
+         <content>
+            <ProgressBar fx:id="wassertank" prefHeight="50.0" prefWidth="500.0" progress="1.0" rotate="-90.0" scaleX="3.5" style="-fx-accent: #5eff5e;">
+               <effect>
+                  <InnerShadow />
+               </effect></ProgressBar>
+         </content>
+      </TitledPane>
+      <TitledPane animated="false" collapsible="false" layoutX="14.0" layoutY="150.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mouseTransparent="true" prefHeight="235.0" prefWidth="62.0" style="-fx-background-radius: 10px; -fx-border-radius: 10px; -fx-background-color: B5B5B5;" text="Kaffeebohnen" textAlignment="CENTER" wrapText="true">
+         <font>
+            <Font size="8.0" />
+         </font>
+         <content>
+            <ProgressBar fx:id="kaffeebohnen" prefHeight="50.0" prefWidth="80.0" progress="1.0" rotate="-90.0" scaleX="3.5" style="-fx-accent: #5eff5e;">
+               <effect>
+                  <InnerShadow />
+               </effect></ProgressBar>
+         </content>
+      </TitledPane>
+      <TextArea fx:id="textFeld2" editable="false" layoutX="291.0" layoutY="80.0" maxHeight="50.0" maxWidth="590.0" minHeight="50.0" minWidth="295.0" prefHeight="50.0" prefWidth="295.0" style="-fx-background-color: B5B5B5;" text="Kaffe" wrapText="true" AnchorPane.leftAnchor="302.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="80.0">
+         <font>
+            <Font name="Courier New" size="24.0" />
+         </font>
+         <effect>
+            <InnerShadow />
+         </effect>
+         <opaqueInsets>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </opaqueInsets>
+      </TextArea>
+      <Separator layoutX="76.0" layoutY="420.0" prefWidth="200.0" AnchorPane.bottomAnchor="100.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="400.0" />
+      <Button fx:id="tropfschale" layoutX="64.0" layoutY="426.0" mnemonicParsing="false" onAction="#tropfschaleLeeren" text="Tropfschale" AnchorPane.bottomAnchor="52.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="105.0" AnchorPane.topAnchor="405.0" />
+      <Button fx:id="tropfschale" layoutX="423.0" layoutY="439.0" mnemonicParsing="false" onAction="#kaffeesatzLeeren" text="Kaffeesatz" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="105.0" AnchorPane.topAnchor="452.0" />
+      <Button fx:id="buttonKA" layoutX="410.0" layoutY="414.0" mnemonicParsing="false" onAction="#kaffeebohnenAuffuellen" text="Kaffeebohnen auffüllen" textAlignment="CENTER" wrapText="true" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="500.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="452.0" />
+      <Button fx:id="buttonWA" layoutX="410.0" layoutY="461.0" mnemonicParsing="false" onAction="#wasserAuffuellen" text="Wasser auffüllen" textAlignment="CENTER" wrapText="true" AnchorPane.bottomAnchor="52.0" AnchorPane.leftAnchor="500.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="405.0" />
+   </children>
+</AnchorPane>
